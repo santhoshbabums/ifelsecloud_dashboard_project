@@ -1,0 +1,114 @@
+.new_resgistration {
+    height: 450px;
+    overflow: hidden;
+    background: #ffffff;
+    border-radius: 7px;
+    padding: 25px;
+
+    .data {
+        overflow-y: scroll;
+        height: 400px;
+    }
+    .user-card {
+        grid-template-columns: 1fr 1fr 2fr 1fr;
+        display: grid;
+        grid-gap: 0px;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        padding: 8px 0px;
+        border-bottom: 1px solid #f7f3f3;
+
+        .user-info {
+            display: flex;
+            justify-content: center;
+
+            .user-image {
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+            }
+            .active-status-dot {
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                margin-left: -18px;
+                margin-top: 61px;
+                border: 2px solid #f9f5f5;
+            
+            }
+        }
+
+        .user-details {
+            text-align: left;
+            .user-name {
+                font-weight: bold;
+                margin-left: 5px;
+                font-size: 18px;
+            }
+            .user-country {
+                color: #777;
+                margin-left: 5px;
+            }
+            
+        }
+
+        .progress-container {
+            display: flex;
+            align-items: center;
+
+            .progress-bar {
+                background-color: #4CAF50;
+                border-radius: 5px;
+                height: 5px;
+                position: relative;
+                margin-right: 5px;
+            }
+            
+            .percentage_box{
+                width: 50px;
+                .percentage {
+                    padding-right: 5px;
+                }
+            }
+            
+        }
+
+        .action-button {
+            background-color: #e9e9e9;
+            color: #867f7f;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .action-button:hover {
+            background-color: #0056b3;
+            color: white;
+        }
+        
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

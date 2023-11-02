@@ -1,0 +1,31 @@
+.recent_order {
+    height: 450px;
+    overflow: hidden;
+    background: #ffffff;
+    border-radius: 7px;
+    padding: 25px;
+
+    .data {
+        overflow-y: scroll;
+        height: 400px;
+        font-family: 'Poppins-Medium', sans-serif !important;
+       th,td {
+            text-align: center;
+            border-bottom: 1px solid #f7f3f3;
+        }
+    }
+    
+    .status_button{
+        border: none;
+        height: 20px;
+        color: white;
+        border-radius: 4px;
+        padding: 0px 10px;
+    }
+    
+    .payment_status{
+        text-align: center;
+    }
+}
+
+

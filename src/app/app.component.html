@@ -1,0 +1,28 @@
+<div class="home-container">
+  <div class="top-container">
+    <app-top-navigation></app-top-navigation>
+  </div>
+  <div class="body-container">
+    <div class="left_navigation_container">
+      <app-left-navigation></app-left-navigation>
+    </div>
+    <div class="card_container">
+      <div class="card_section">
+        <app-topdatacard></app-topdatacard>
+      </div>
+      <div class="user_details_container">
+        <div class="recent_order">
+          <app-recent-order></app-recent-order>
+        </div>
+        <div class="new_register">
+          <app-new-user-registration></app-new-user-registration>
+        </div>
+      </div>
+      <div class="chart_container">
+        <div class="chart1" echarts [options]="sales"></div>
+        <div class="chart2" echarts [options]="balanceOverview"></div>
+        <div class="chart3" echarts [options]="topProducts"></div>
+      </div>
+    </div>
+  </div>
+</div>

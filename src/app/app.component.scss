@@ -1,0 +1,91 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+
+    .top-container {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+
+    .body-container {
+        background-color: #e4f3fa;
+        flex: 1;
+        overflow-y: auto;
+        display: flex;
+        height: 100vh;
+
+        .left_navigation_container {
+            float: left;
+            background: white;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+            width: 95px;
+        }
+
+        .card_container {
+            float: left;
+            width: 90%;
+            padding: 20px;
+            margin: 0 auto;
+            overflow: auto;
+
+            .card_section {
+                margin-bottom: 25px;
+            }
+
+            .user_details_container {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 25px;
+                width: 100%;
+
+                .recent_order {
+                    width: 63%;
+                }
+
+                .new_register {
+                    width: 35%;
+                }
+            }
+
+            .chart_container {
+                display: flex;
+                justify-content: space-between;
+
+                .chart1 {
+                    width: 400px;
+                    height: 400px;
+                    float: left;
+                    width: 35%;
+                    padding: 20px;
+                    background-color: white;
+                    border-radius: 7px;
+                }
+
+                .chart2 {
+                    width: 400px;
+                    height: 400px;
+                    float: left;
+                    width: 35%;
+                    padding: 20px;
+                    background-color: white;
+                    border-radius: 7px;
+                }
+
+                .chart3 {
+                    width: 400px;
+                    height: 400px;
+                    float: left;
+                    width: 20%;
+                    padding: 20px;
+                    background-color: white;
+                    border-radius: 7px;
+                }
+            }
+        }
+    }
+}

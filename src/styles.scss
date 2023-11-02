@@ -1,0 +1,54 @@
+/* You can add global styles to this file, and also import other style files */
+
+@font-face{font-family:'Poppins-Medium';src:url(Poppins-Medium.ttf) format('woff2')}
+@font-face{font-family:'Poppins-SemiBold';src:url(Poppins-SemiBold.woff2) format('woff2')}
+@font-face{font-family:'Poppins-Regular';src:url(Poppins-Regular.woff2) format('woff2')}
+
+
+html,
+body {
+    margin: 0;
+    height: 100%;
+    font-family: 'Poppins-Medium', sans-serif !important;
+}
+
+mat-icon, button {
+    cursor: pointer;
+}
+
+table,th,td {
+    font-family: 'Poppins-Medium', sans-serif !important;
+}
+
+
+@media(max-width: 800px) {
+    .responsive_table {
+        overflow-x: auto !important;
+    }
+}
+
+.mat-row {
+    height: auto;
+}
+
+.mat-header-cell,
+.mat-cell {
+    text-align: center !important;
+    padding: 0px 8px 0px 15px !important;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar:horizontal {
+    height: 6px;
+}
+
+::-webkit-scrollbar-track:horizontal {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+    background: #888;
+}

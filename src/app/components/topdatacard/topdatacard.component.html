@@ -1,0 +1,25 @@
+<div class="card_container">
+    <ng-container *ngFor="let tc of topcard;let i = index">
+        <div class="card">
+            <div class="value">
+                <span class="percentage">{{tc.value}} %</span> <br>
+                <div class="card_content">
+                    <span class="header">{{tc.header}}</span><br>
+                    <span class="sub_header">{{tc.sub_header}}</span>
+                </div>
+            </div>
+            <div *ngIf="i==0">
+                <i class="fa fa-music" aria-hidden="true"></i>
+            </div>
+            <div *ngIf="i==1">
+                <i class="fa fa-pie-chart" aria-hidden="true"></i>
+            </div>
+            <div *ngIf="i==2">
+                <i class="fa fa-download" aria-hidden="true"></i>
+            </div>
+            <div *ngIf="i==3">
+                <i class="fa fa-repeat" aria-hidden="true"></i>
+            </div>
+        </div>
+    </ng-container>
+</div>

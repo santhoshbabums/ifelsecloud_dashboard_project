@@ -1,0 +1,56 @@
+.card_container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+    .card {
+        background-color: rgb(247 247 254);
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        padding: 30px 40px;
+        margin: 10px 10px;
+        text-align: justify;
+        display: flex;
+        justify-content: space-between;
+        width: 450px;
+        .value {
+            margin-top: 20px;
+
+            .percentage {
+                font-size: 50px;
+                color: #6262ed;
+            }
+            .card_content {
+                margin-top: 20px;
+                .header {
+                    font-size: 18px;
+                }
+                .sub_header {
+                    font-size: 8px;
+                    color: #cecaca;
+                }
+            }
+        }
+        i {
+            font-size: 50px;
+            padding: 10px;
+            color: #cecaca;
+        }
+    }
+    .card:hover {
+        background-color: #6262ed;
+        color: rgb(247 247 254);
+    }
+    .card:hover .value .percentage {
+        font-size: 50px;
+        color: rgb(247 247 254);
+    }
+    .card:hover .value  .card_content .sub_header{
+        color: rgb(247 247 254);
+    }
+    .card:hover i {
+        color: rgb(247 247 254);
+    }
+}
